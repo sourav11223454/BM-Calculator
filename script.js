@@ -58,3 +58,6 @@ const result = () => {
 <p style="color:${color}; font-size:22px;"><span style=color:white>Status :</span> ${category}</p>
 `
 }
+const clear=()=>{
+    out.innerHTML="" 
+}
