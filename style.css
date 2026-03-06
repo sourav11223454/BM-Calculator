@@ -58,8 +58,15 @@
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
     border-radius: 20px;
 }
+#output{
+color:white;
+font-size:40px;
+font-weight:bold;
+text-align:center;
+margin-top:200px;
+}
 
-/* @media (max-width:768px){
+@media (max-width:768px){
 
 .bmi-container{
     flex-direction:column;
@@ -72,5 +79,8 @@
     clip-path:none;
     transform:none;
 }
+.left-card input[type="number"]{
+    width: 200px;
+}
 
-} */
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,31 +19,30 @@
                     <h1>Calculate Body Mass Index</h1>
                     <form>
                         <div class="mb-3" style="width: 300px;">
-                            <label style="margin-left: 10px;" for="">Age</label>
-                            <input style="margin-top: 10px;" type="age" class="form-control" id="inputage"
-                                placeholder="Enter Your Age">
+                            <label style="margin-left: 10px;" for="inputAge">Age</label>
+                            <input style="margin-top: 10px;" type="number" class="form-control" id="inputage"
+                                placeholder="Enter Your Age" required>
                         </div>
-                        <label class="form-label">Gender</label><br>
+                        <label class="form-label" id="genderInput">Gender</label><br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
                             <label class="form-check-label" for="male">Male</label>
                         </div>
-
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
                             <label class="form-check-label" for="female">Female</label>
                         </div>
                           <div class="mb-3" style="width: 300px;">
                             <label style="margin-left: 10px;" for="">Height</label>
-                            <input style="margin-top: 10px;" type="age" class="form-control" id="inputheight"
-                                placeholder="Cm">
+                            <input style="margin-top: 10px;" type="number" class="form-control" id="inputheight"
+                                placeholder="Cm" required>
                         </div>
                           <div class="mb-3" style="width: 300px;">
                             <label style="margin-left: 10px;" for="">Weight</label>
-                            <input style="margin-top: 10px;" type="age" class="form-control" id="inputweight"
-                                placeholder="Kg">
+                            <input style="margin-top: 10px;" type="number" class="form-control" id="inputweight"
+                                placeholder="Kg" required>
                         </div>
-                        <button type="submit" class="btn btn-dark ms-5">Calculate Now</button>
+                        <button type="button" onclick="result()" class="btn btn-dark ms-5">Calculate Now</button>
                     </form>
                 </div>
                 <div class="right-card">
