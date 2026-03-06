@@ -74,6 +74,7 @@ padding:20px;
 }
 
 .bmi-container{
+padding-left:0 ;
 flex-direction:column;
 height:auto;
 width:100%;
@@ -110,7 +111,7 @@ align-items:center;
 
 .left-card input[type="number"]{
 width:100%;
-max-width:280px;
+max-width:100%;
 }
 
 .right-card{
