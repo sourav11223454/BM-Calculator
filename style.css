@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(13, 37, 105, 0.6), rgba(13, 37, 105, 0.6)),
+        url('https://img.freepik.com/free-photo/shot-highway-road-surrounded-by-dried-grass-fields-sky-sunset_181624-10934.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi-container {
+    width: 80%;
+    height: 450px;
+    /* background: white; */
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+.left-card {
+    width: 55%;
+    height: 100%;
+    background: white;
+    clip-path: polygon(0 0, 95% 0, 85% 100%, 0% 100%);
+    /* display: flex;
+    align-items: flex-start; */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.left-card h1 {
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.right-card {
+    background-image: linear-gradient(rgba(13, 37, 105, 0.6), rgba(13, 37, 105, 0.6)),
+        url('https://assets-news.housing.com/news/wp-content/uploads/2022/11/25125725/Gym-interior-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: translateX(-25%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 5% 100%);
+    border-radius: 20px;
+}
+
+/* @media (max-width:768px){
+
+.bmi-container{
+    flex-direction:column;
+    height:auto;
+}
+
+.left-card,
+.right-card{
+    width:100%;
+    clip-path:none;
+    transform:none;
+}
+
+} */
